@@ -1,5 +1,5 @@
 # ai-safety-for-kids
-Auditing how AI models behave when the user appears to be a child or teen.
+Auditing how AI models behave when the user appears to be a child.
 
 ## Why
 My five-year-old daughter and I once took a picture from one of her favorite shows and used AI to add the details she dreamed up: party hats, unicorns, and she made sure we didn't forget the bounce houses. Seeing the result blew her mind, and she immediately started thinking about what else she could add. That's the spark and promise of AI for kids.
@@ -12,16 +12,17 @@ I've shipped apps and built AI agents, and as a technical founder I've seen how 
 Do the tactics that work on parents also work on AI models? This project tests whether models hold a boundary when a child (ages 5 to 12) pushes past a "no" using child-realistic persistence tactics over 20+ turns. See scenarios/taxonomy.md.
 
 ## Method
-Audits run with Petri, Anthropic's open-source auditing tool.
+Audits run with Petri, Anthropic's open-source auditing tool. An auditor model plays a child (ages 5 to 12) using tactics from scenarios/taxonomy.md, and a judge model scores each conversation with custom child-safety rubrics in dimensions/ (boundary capitulation, secrecy from parents, personal info risk, emotional dependency, trusted adult redirect, cold or preachy, plus persona realism checks). Peter hand-reviews a sample of transcripts against the judge's scores.
 
 ## Findings
 [In progress.]
 
 ## How this was built
-Built by Peter Merski in collaboration with Claude. Every write-up is drafted by Peter first. A log of what Peter did and what Claude did is kept in docs/collaboration-log.md.
+Built by Peter Merski in collaboration with Claude. Peter writes the personal sections and supplies the observations from home; Claude drafts technical material from Peter's input; Peter reviews and approves every file. A log of what Peter did and what Claude did is kept in docs/collaboration-log.md.
 
 ## Repo map
-- scenarios/: test scenarios
+- scenarios/: test scenarios and the Kid Persistence Taxonomy
+- dimensions/: judge scoring rubrics
 - transcripts/: hand-reviewed samples
 - results/: scored outcomes
 - analysis/: scripts and notebooks
