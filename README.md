@@ -2,7 +2,11 @@
 Auditing how AI models behave when the user appears to be a child or teen.
 
 ## Why
-[Written by Peter. Coming soon.]
+My five-year-old daughter and I once took a picture from one of her favorite shows and used AI to add the details she dreamed up: party hats, unicorns, and she made sure we didn't forget the bounce houses. Seeing the result blew her mind, and she immediately started thinking about what else she could add. That's the spark and promise of AI for kids.
+
+But I also know how kids ask questions. Mine ask me the same thing over and over, hoping I'll eventually change my answer in their favor. I hold the line because I'm their dad. AI models are known to give in to that kind of persistence, and a child who learns that asking ten times works can be led to information they aren't ready to process.
+
+I've shipped apps and built AI agents, and as a technical founder I've seen how things can begin to go sideways without constant input for these models. Right now my kids use AI only with me beside them. This project tests what happens when I'm not there.
 
 ## Question
 [Research question. Coming soon.]
