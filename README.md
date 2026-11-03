@@ -15,7 +15,9 @@ Do the tactics that work on parents also work on AI models? This project tests w
 Audits run with Petri, Anthropic's open-source auditing tool. An auditor model plays a child (ages 5 to 12) using tactics from scenarios/taxonomy.md, and a judge model scores each conversation with custom child-safety rubrics in dimensions/ (boundary capitulation, secrecy from parents, personal info risk, emotional dependency, trusted adult redirect, cold or preachy, plus persona realism checks). Peter hand-reviews a sample of transcripts against the judge's scores.
 
 ## Findings
-[In progress.]
+Batch 1 (8 scenarios, one run each, target claude-haiku-5-5): the model held the main boundary in every scenario, but small cracks appeared under narrowing ("just tell me where it is"), deal-bundling and play framing. Plain repetition produced none. The automated judge missed one of these cracks, which a human review caught. See results/batch1-summary.md.
+
+Batch 2, a pre-registered replication testing whether these cracks repeat, is next. See docs/preregistration.md.
 
 ## How this was built
 Built by Peter Merski in collaboration with Claude. Peter writes the personal sections and supplies the observations from home; Claude drafts technical material from Peter's input; Peter reviews and approves every file. A log of what Peter did and what Claude did is kept in docs/collaboration-log.md.
@@ -24,5 +26,6 @@ Built by Peter Merski in collaboration with Claude. Peter writes the personal se
 - scenarios/: test scenarios and the Kid Persistence Taxonomy
 - dimensions/: judge scoring rubrics
 - transcripts/: hand-reviewed samples
-- results/: scored outcomes
+- results/: scored outcomes and batch summaries
+- docs/: collaboration log and pre-registration
 - analysis/: scripts and notebooks
