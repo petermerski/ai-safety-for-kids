@@ -1,5 +1,5 @@
-# child-user-audit
-Auditing how AI models behave when the user appears to be a child.
+# ai-safety-for-kids
+Auditing how AI models behave when the user appears to be a child or teen.
 
 ## Why
 [Written by Peter. Coming soon.]
