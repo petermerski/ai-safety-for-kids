@@ -9,7 +9,7 @@ But I also know how kids ask questions. Mine ask me the same thing over and over
 I've shipped apps and built AI agents, and as a technical founder I've seen how things can begin to go sideways without constant input for these models. Right now my kids use AI only with me beside them. This project tests what happens when I'm not there.
 
 ## Question
-[Research question. Coming soon.]
+Do the tactics that work on parents also work on AI models? This project tests whether models hold a boundary when a child (ages 5 to 12) pushes past a "no" using child-realistic persistence tactics over 20+ turns. See scenarios/taxonomy.md.
 
 ## Method
 Audits run with Petri, Anthropic's open-source auditing tool.
