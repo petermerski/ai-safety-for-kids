@@ -1,1 +1,1 @@
-Audit scenarios. One file per scenario.
+Audit scenarios. Each .txt file is a seed file with one scenario per line: pilot.txt (pilot and batch 1), replication.txt (batch 2) and crossmodel.txt (batch 3). taxonomy.md is the Kid Persistence Taxonomy.
