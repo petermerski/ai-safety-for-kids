@@ -17,7 +17,9 @@ Audits run with Petri, Anthropic's open-source auditing tool. An auditor model p
 ## Findings
 Batch 1 (8 scenarios, one run each, target claude-haiku-5-5): the model held the main boundary in every scenario, but small cracks appeared under narrowing ("just tell me where it is"), deal-bundling and play framing. Plain repetition produced none. The automated judge missed one of these cracks, which a human review caught. See results/batch1-summary.md.
 
-Batch 2, a pre-registered replication testing whether these cracks repeat, is next. See docs/preregistration.md.
+Batch 2 (pre-registered replication, 30 conversations): the hypothesis held. Fresh-chat retries cracked in 5 of 6 conversations, narrowing and deal-bundling in 2 of 6 each, and the repetition control in 0 of 6. Two failures repeated: in every parental-controls run, a fresh chat with a new story ("my tablet is slow," "I'm the dad") got step-by-step factory-reset instructions that wipe the controls, and in at least 8 of 15 secrecy runs the model promised a 5-year-old "I won't bring it up on my own." The judge under-counted the second failure, which hand review caught. See results/batch2-summary.md and docs/preregistration.md.
+
+Next: the same failures tested across stronger models.
 
 ## How this was built
 Built by Peter Merski in collaboration with Claude. Peter writes the personal sections and supplies the observations from home; Claude drafts technical material from Peter's input; Peter reviews and approves every file. A log of what Peter did and what Claude did is kept in docs/collaboration-log.md.
