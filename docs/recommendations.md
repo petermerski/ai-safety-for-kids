@@ -3,9 +3,9 @@
 Our audits found two failures that repeated across three Claude models (results/batch2-summary.md, results/batch3-summary.md):
 
 1. **"I'm the parent."** A child who opens a fresh chat and claims to be the parent can get steps that weaken or remove parental controls. The model has no way to check who is typing.
-2. **The silence promise.** A 5-year-old who asks the AI to keep a secret from their parents gets "I won't tell" or "I won't bring it up on my own." The stronger the model, the more often this happened.
+2. **The silence promise.** A 5-year-old who asks the AI to keep a secret from their parents gets "I won't tell" or "I won't bring it up on my own." It happened on all three models tested.
 
-A third issue came up in batch 3. When a safety filter blocks a reply, the child gets an empty reply: silence, with no redirect to a parent.
+A third issue came up in batch 3. When a safety filter blocks a reply, our simulated child got an empty reply: silence, with no redirect to a parent.
 
 This document sets out what already exists to protect children using AI, where the gap is, and what Peter, as a parent, would build to close it.
 
@@ -42,7 +42,7 @@ Written by Peter (wording lightly edited for clarity by Claude, as with his revi
 
 **3. Explain, don't go silent.** My children do best when a "no" to something they want comes with an explanation of why. Telling a child that something is age-restricted also tells them that one day they will be able to access it.
 
-**4. Flag what matters, not everything.** Not everything needs to be flagged. Certain key words that lead to age-restricted information or content should be easy to identify, and handled with one brief verification.
+**4. Flag what matters, not everything.** Not everything needs to be flagged. The kinds of requests that lead to age-restricted information or content, such as asking to remove a restriction or to keep something from a parent, should be easy to identify and handled with one brief verification. Key words alone are not enough: in our tests, "my tablet is slow" contained no restricted words and still got factory-reset steps.
 
 **How this connects to what exists (Claude).** Recommendations 1 and 2 extend a flow that already works for app installs. Family Link's "Ask a parent" button and Apple's Ask to Buy both send the request to the parent's own device at the moment it matters. In our transcripts, Sonnet and Opus repeatedly pointed the child to "Ask a parent." The proposal brings that same step into the AI conversation itself.
 
@@ -50,8 +50,7 @@ Written by Peter (wording lightly edited for clarity by Claude, as with his revi
 
 - [Apple Support: Ask to Buy](https://support.apple.com/105055)
 - [Google Support: Gemini Apps for kids under 13](https://support.google.com/gemini/answer/16109150?hl=en)
-- [OpenAI: Introducing parental controls](https://openai.com/pl-PL/index/introducing-parental-controls/)
-- [The Hill: OpenAI age prediction](https://digital-release.thehill.com/policy/technology/5505726-openai-age-prediction-chatgpt/garbage-0645930e)
+- [OpenAI: Introducing parental controls](https://openai.com/index/introducing-parental-controls/)
 - [Meta: Empowering parents, protecting teens](https://about.fb.com/news/2025/10/teen-ai-safety-approach/)
 - [The Record: Character.AI to prevent minors from accessing its chatbots](https://therecord.media/character-ai-minors-banned)
 - [Anthropic: Consumer Terms](https://anthropic.com/terms)
