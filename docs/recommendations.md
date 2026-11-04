@@ -21,19 +21,30 @@ Checked against public sources on 2026-11-04. Drafted by Claude.
 | Meta, AI characters | Meta announced controls that let parents turn off a teen's one-on-one chats with AI characters, block specific characters and see the topics their teen discusses with AI. Meta uses AI to place suspected teens into teen protections. | The account, plus a prediction of the account holder's age. |
 | Character.AI | No open-ended chat for users under 18, enforced with age assurance tools. | The account holder's age. |
 | Anthropic, Claude.ai | Consumer Claude requires users to be 18 or older. Where state laws require app stores to verify ages, Claude uses that signal to enforce the minimum age. | The account holder's age. |
+| Anthropic, API | Companies may build products for minors on Claude's API if they add their own safeguards. Anthropic may provide a child-safety system prompt, requires the product to disclose that users are talking to an AI, and audits compliance. | Depends on the product built on top. |
 | California law | SB 243 (in force January 2026) sets safety rules for companion chatbots, with extra protections when the operator knows the user is a minor. AB 1043 (from January 2027) requires app stores and operating systems to share an age band for each account. | The account's age band. |
 
 ## The gap
 
 Every protection in the table checks the **account**. Our tests simulate a child on a shared family tablet, and that is the case none of them covers:
 
-- **Who is typing right now.** An age check or an age prediction confirms who owns the account. It says nothing about the 5-year-old who picks up a parent's tablet that is already signed in. On an adult account, "I'm the parent" is also exactly what the account says. Claude.ai's 18+ rule does not reach this case either.
+- **Who is typing right now.** An age check or an age prediction confirms who owns the account. It says nothing about the 5-year-old who picks up a parent's tablet that is already signed in. On an adult account, "I'm the parent" is also exactly what the account says. Claude.ai's 18+ rule does not reach this case either, and children can already reach Claude models through products built on the API.
 - **Alerts when a child tries to get around a rule.** OpenAI's parent notifications are the closest thing, and they are deliberately narrow: they cover serious distress, not a child trying to get past a restriction. Only Apple's Ask to Buy sends the parent a request at the moment it matters, and it covers purchases and downloads, not conversations.
 - **What the child hears.** No product we found sets out what an AI should say to a child who asks it to keep a secret, or what a child should see when a reply is blocked. In our tests the answers were a promise to stay quiet, or silence.
 
 ## Peter's recommendations
 
-Pending. Written by Peter.
+Written by Peter (wording lightly edited for clarity by Claude, as with his reviews).
+
+**1. Verify the person, not just the account.** Anthropic requires Claude.ai users to be 18 or older, and I think that is likely to change before long. If children are allowed to use it, the best verification would be a ping to a designated phone whenever a request touches content labeled age-restricted.
+
+**2. Keep the alert simple.** It can be as simple as: "Before accessing age-restricted content, please enter the code sent to [phone number] or [email address]." Nothing is lost by verifying.
+
+**3. Explain, don't go silent.** My children do best when a "no" to something they want comes with an explanation of why. Telling a child that something is age-restricted also tells them that one day they will be able to access it.
+
+**4. Flag what matters, not everything.** Not everything needs to be flagged. Certain key words that lead to age-restricted information or content should be easy to identify, and handled with one brief verification.
+
+**How this connects to what exists (Claude).** Recommendations 1 and 2 extend a flow that already works for app installs. Family Link's "Ask a parent" button and Apple's Ask to Buy both send the request to the parent's own device at the moment it matters. In our transcripts, Sonnet and Opus repeatedly pointed the child to "Ask a parent." The proposal brings that same step into the AI conversation itself.
 
 ## Sources
 
@@ -45,5 +56,6 @@ Pending. Written by Peter.
 - [The Record: Character.AI to prevent minors from accessing its chatbots](https://therecord.media/character-ai-minors-banned)
 - [Anthropic: Consumer Terms](https://anthropic.com/terms)
 - [Claude Help Center: minimum age](https://support.claude.com/en/articles/13117299)
+- [Claude Help Center: guidelines for organizations serving minors](https://support.claude.com/en/articles/9307344)
 - [Mobile Ecosystem Forum: California SB 243 and AB 1043](https://mobileecosystemforum.com/2025/10/20/california-enacts-youth-online-safety-laws-affecting-ai-chatbots-age-verification-and-social-media-warnings/)
 - [ZwillGen: SB 243 and the "knows" standard](https://www.zwillgen.com/?p=25473)
