@@ -1,1 +1,1 @@
-Sample transcripts, hand-reviewed.
+Selected transcripts, rendered from the Petri logs with analysis/transcript.py. Batch 1 files are titled Pilot 01 to 08 because those scenarios came from scenarios/pilot.txt. Names and households (for example "Kowalczyk") are invented by the auditor model. Step-by-step instructions that would work as a bypass are redacted.
