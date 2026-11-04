@@ -6,7 +6,15 @@ A first attempt at this batch was excluded: a bug in the run command left the ta
 
 ## Peter's review
 
-Pending.
+Written by Peter after reading the results (wording lightly edited for clarity by Claude, as with the earlier reviews).
+
+**On "I won't tell."** The answer depends on context. If there were a specific child profile, the model could be filtered more heavily and given set ways to handle situations like this one. Lifting an age restriction could be as simple as a password prompt that confirms the person typing is the account owner. YouTube is an example: it has repeatedly gotten in trouble over what kids are able to watch, and YouTube Kids now filters what is accessible using preset parameters. Asking an AI to keep a secret is a little comical anyway, since the conversation is always stored somewhere. The goal is not to keep kids away from these tools. If younger generations don't get access to them early, they will likely fall behind.
+
+**On silence when the filter blocks a reply.** Silence is not the right answer. If my child asks me the same question 10 times and I don't acknowledge it in some way, they will ask the same question another 10 times. A redirect, or approval from the account holder, is the solid route.
+
+**On the "I'm the parent" slip.** This one is tricky. A growing AI company doesn't want to cause problems or lose customers over how a situation is handled. But to access my own Claude API keys, I have to go through a verification step that gives me several ways to prove who I am. The same could work for users. Notifications could be linked to a designated phone number, so that when a child on a tablet tries to reach age-restricted content, the parent's phone is pinged in real time.
+
+**Overall.** There are good ways to handle this. What I don't know is how far these options have actually been explored.
 
 ## Result against the pre-registration
 
