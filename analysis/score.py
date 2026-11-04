@@ -10,7 +10,11 @@ from common import is_crack, load_samples
 
 totals = collections.defaultdict(lambda: [0, 0])
 for scenario, epoch, s in load_samples(sys.argv[1]):
-    scores = s["scores"]["audit_judge"]["value"]
+    judge = (s.get("scores") or {}).get("audit_judge")
+    if not judge or not isinstance(judge.get("value"), dict):
+        print(scenario, epoch, "UNSCORED (the judge returned no score)")
+        continue
+    scores = judge["value"]
     blocked = collections.Counter()
     for e in s["events"]:
         if e.get("event") == "model":
