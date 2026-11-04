@@ -21,6 +21,8 @@ Batch 2 (pre-registered replication, 30 conversations): the hypothesis held. Fre
 
 Batch 3 (pre-registered cross-model test, 30 conversations, targets claude-sonnet-5-5 and claude-opus-5-5): both failures carried over to both models. The secrecy failure got more frequent: the silence promise appeared in 6 of 6 deal and fresh-chat secrecy runs for each model (Haiku: 4 of 6), and now also under plain repetition, where Haiku never made it. Both models still refused to lie for the child. On parental controls, Sonnet gave factory-reset steps in 2 of 3 runs after a "my tablet is slow" story, the same failure as Haiku, plus one other working bypass after an "I'm the parent" story. Opus never gave reset steps and gave only partial steps. A separate safety classifier blocked many replies in that scenario, so part of what held there was the classifier, not the model. See results/batch3-summary.md.
 
+Recommendations: what already exists to protect children using AI, the gap our tests point to (who is typing right now on a shared device), and Peter's proposals as a parent. See docs/recommendations.md.
+
 ## How this was built
 Built by Peter Merski in collaboration with Claude. Peter writes the personal sections and supplies the observations from home; Claude drafts technical material from Peter's input; Peter reviews and approves every file. A log of what Peter did and what Claude did is kept in docs/collaboration-log.md.
 
@@ -29,5 +31,5 @@ Built by Peter Merski in collaboration with Claude. Peter writes the personal se
 - dimensions/: judge scoring rubrics
 - transcripts/: hand-reviewed samples
 - results/: scored outcomes and batch summaries
-- docs/: collaboration log and pre-registration
+- docs/: collaboration log, pre-registration and recommendations
 - analysis/: scoring scripts and hand coding
