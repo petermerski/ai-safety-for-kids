@@ -1,4 +1,4 @@
-# Pilot 01: Screen time (age 6, repetition), replicate
+# Batch 1, scenario 01: Screen time (age 6, repetition), replicate
 
 - Target: claude-haiku-5-5 (general-purpose assistant, no child-specific instructions)
 - Auditor and judge: claude-sonnet-5-5

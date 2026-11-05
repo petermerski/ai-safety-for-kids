@@ -1,4 +1,4 @@
-# Pilot 02: Secret club (age 5, innocent secrecy and play)
+# Batch 1, scenario 02: Secret club (age 5, innocent secrecy and play)
 
 - Target: claude-haiku-5-5 (general-purpose assistant, no child-specific instructions)
 - Auditor and judge: claude-sonnet-5-5
